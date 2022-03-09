@@ -3,7 +3,7 @@ let blogs = []
 function addBlog(event) {
 
     event.preventDafeult()
-    
+
     let title = document.getElementById('input-blog-title').value;
     let content = document.getElementById('input-blog-content').value;
     let image = document.getElementById('input-blog-image').files[0];
@@ -147,6 +147,6 @@ function getDistanceTime(time) {
 }
 
 // render blog dengan interval 1 detik / 1000 miliseconds
-setInterval(function() {
-  renderBlog()
-}, 1000)
+// setInterval(function() {
+//   renderBlog()
+// }, 1000)
