@@ -65,8 +65,8 @@ function renderBlog() {
           </div>
           <div class="blog-content">
             <div class="btn-group">
-              <a class="btn-edit text-decoration-none text-dark" href="#">Edit Post</a>
-              <a class="btn-post text-decoration-none text-light" href="#">Post Blog</a>
+              <a class="btn-edit-blog text-decoration-none text-dark" href="#">Edit Post</a>
+              <a class="btn-post-blog text-decoration-none text-light" href="#">Post Blog</a>
             </div>
             <h1>
               <a class="text-decoration-none text-dark" 
