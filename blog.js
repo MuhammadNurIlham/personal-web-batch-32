@@ -1,6 +1,9 @@
 let blogs = []
 
-function addBlog() {
+function addBlog(event) {
+
+    event.preventDafeult()
+    
     let title = document.getElementById('input-blog-title').value;
     let content = document.getElementById('input-blog-content').value;
     let image = document.getElementById('input-blog-image').files[0];
