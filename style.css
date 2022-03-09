@@ -626,14 +626,14 @@ select {
     margin-bottom: 20px;
   }
   
-  .blog .blog-list .btn-group .btn-edit {
+  .blog .blog-list .btn-group .btn-edit-blog {
     padding: 5px 10px;
     border: 0;
     border-radius: 4px;
     background: #dbdbdb;
   }
   
-  .blog .blog-list .btn-group .btn-post {
+  .blog .blog-list .btn-group .btn-post-blog {
     padding: 5px 10px;
     border: 0;
     border-radius: 4px;
