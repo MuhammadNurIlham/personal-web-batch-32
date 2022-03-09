@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Navbar and Layouting">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta name="author" content="Muhammad Nur Ilham">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link header style css internal -->
+        <link rel="stylesheet" href="style.css">
+        <!-- link fontawesome -->
+        <link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/css/all.css">
+        <!-- link font google -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&family=Poppins&family=Source+Serif+4&display=swap" rel="stylesheet">
+        <!-- link stylesheet css bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- link cdn icon bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <!-- link script stylesheet js bootstrap (bundle) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <title>Day 1 - Muhammad Nur Ilham</title>
+    </head>
+<body>
+    <!-- start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="my logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: blue !important;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        My Project
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" style="color: blue !important;" href="day1.html">Day 1</a></li>
+                            <li><a class="dropdown-item" href="#">Day 2</a></li>
+                            <li><a class="dropdown-item" href="day3.html">Day 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success" type="submit">
+                    <a href="form-contact.html">Contact Me</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <center>
+        <section>
+            <div class="profile">
+                <div class="profile-title">
+                    <h1>Hi, Welcome to My Profile</h1>
+                </div>
+                <div class="profile-content">
+                    <p>Hi, My name is Muhammad Nur Ilham 
+                        I'm learning how to become a Full Stack Developer with PT. DumbWays Teknologi Indonesia, 
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore corrupti animi nesciunt odio voluptatem harum. 
+                        Tempore debitis eaque reprehenderit sunt nemo tempora similique, reiciendis accusamus quia id aperiam minus delectus.
+                    </p>
+                </div>
+                <div class="profile-call">
+                    <button class="btn-submit" type="submit">
+                        <a href="form-contact.html">Contact Me</a>
+                    </button>
+                </div>
+                <div class="profile-download">
+                    <a href="#" rel="download">Download CV
+                        <i class="bi bi-download"></i>
+                    </a>
+                </div>
+                <div class="profile-contact">
+                    <a href="http://www.instagram.com" target="blank" title="menuju halaman instagram">
+                        <img src="assets/instagram.png" alt="instagram-logo">
+                    </a>
+                    <a href="http://www.facebook.com" target="blank" title="menuju halaman facebook">
+                        <img src="assets/facebook.png" alt="facebook-logo">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=62859180688697&text=Hi, Lets Collaboration" target="blank" title="Menuju halaman whatsapp">
+                        <img src="assets/whatsapp.png" alt="whatsapp-logo">
+                    </a>
+                    <a href="http://www.github.com" target="blank" title="menuju halaman github">
+                        <img src="assets/git.png" alt="github-logo">
+                    </a>
+                </div>
+                <div class="profile-image">
+                    <img src="assets/my-image.jpg" alt="my my-image">
+                    <h4>Muhammad Nur Ilham</h4>
+                    <h6>Fullstack Developer</h6><br>
+                </div>
+            </div>
+        </section>
+    </center>
+</body>
+</html>

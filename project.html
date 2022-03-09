@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Navbar and Layouting">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta name="author" content="Muhammad Nur Ilham">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link fontawesome -->
+        <link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/css/all.css">
+        <!-- link font google -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&family=Poppins&family=Source+Serif+4&display=swap" rel="stylesheet">
+        <!-- link stylesheet css bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- link cdn icon bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <!-- link script stylesheet js bootstrap (bundle) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- link header style css internal -->
+        <link rel="stylesheet" href="style.css">
+        <title>Project - Muhammad Nur Ilham</title>
+    </head>
+    <body>
+        <!-- start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/logo.png" alt="my logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: blue !important" href="project.html">My Project</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-success" type="submit">
+                        <a href="form-contact.html">Contact Me</a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Start Form Create Project -->
+        <div class="blog-project">
+            <div class="form-blog-project">
+                <div class="container-blog-project">
+                    <form onsubmit="addProject(event)">
+                        <h1 class="fs-2 fw-bold">Add My Project</h1>
+                        <div class="name-project">
+                            <label for="input-project-name" class="mb-2 fs-5">Project Name</label>
+                            <input id="input-project-name" type="text"/>
+                        </div>
+                        <div class="time-project">
+                            <div class="time-project-left">
+                                <label for="input-start-time" class="mb-2 fs-5">Start Date</label>
+                                <input id="input-start-time" type="date">
+                            </div>
+                            <div class="time-project-right">
+                                <label for="input-end-time" class="mb-2 fs-5">End Date</label>
+                                <input id="input-end-time" type="date">
+                            </div>
+                        </div>
+                        <div class="description-project">
+                            <label for="input-description" class="mb-2 fs-5">Description</label>
+                            <textarea id="input-description"></textarea>
+                        </div>
+                        <div class="list-project-group">
+                            <div>
+                                <label for="input-name-list-project" class="mb-2 fs-5">Tecnhologies</label>
+                            </div>
+                            <div class="list-project">
+                                <div class="list-left-project">
+                                    <div>
+                                        <label for="fa-node-js">
+                                            <input type="checkbox" name="technologies" value="fa-node-js" id="node-js"> Node Js
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="fa-react">
+                                            <input type="checkbox" name="technologies" value="fa-react" id="react-js"> React Js
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="list-right-project">
+                                    <div>
+                                        <label for="fa-js">
+                                            <input type="checkbox" name="technologies" value="fa-js" id="javascript"> Javascript
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="fa-php">
+                                            <input type="checkbox" name="technologies" value="fa-php" id="php"> PHP
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-project">
+                            <label for="input-myfile" class="mb-2 fs-5">Upload Image</label>
+                            <input type="file" id="input-myfile" name="myfile">
+                        </div>
+                        <div class="button-project">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Form Create Project -->
+
+        <!-- Start My Project -->
+        <section class="my-project">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col">
+                        <h2 class="mt-3">My Project</h2>
+                    </div>
+                </div>
+                <div class="row" id="my-project-app">
+                    <div class="col-4 mb-3 mt-5">
+                        <div class="card-app h-100">
+                            <img src="assets/logo1.jpg" class="card-img-top" alt="logo-1">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a class="text-decoration-none text-dark" href="project-detail.html">DumbWays Mobile App</a>
+                                </h5>
+                                <p class="card-time fw-light">durasi : 3 bulan</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-icon ms-3 mb-3">
+                                <i class="fa-brands fa-js me-2"></i>
+                                <i class="fa-brands fa-node-js me-2"></i>
+                                <i class="fa-brands fa-react me-2"></i>
+                                <i class="fa-brands fa-php"></i>
+                            </div>
+                            <div class="row justify-content-center mb-2">
+                                <div class="col-6">
+                                    <button class="btn-edit ms-2" type="button">Edit</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn-delete me-1" type="button">Delete</button>
+                                </div>
+                            </div>
+                            <!-- <div class="card-end">
+                                <div class="d-grid gap-2 d-md-block ms-2 mb-2">
+                                    <button class="btn btn-primary" type="button">Edit</button>
+                                    <button class="btn btn-primary" type="button">Delete</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3 mt-5">
+                        <div class="card-app h-100">
+                            <img src="assets/logo2.jpg" class="card-img-top" alt="logo-2">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a class="text-decoration-none text-dark" href="project-detail.html">DumbGram Mobile App</a>
+                                </h5>
+                                <p class="card-time fw-light">durasi : 3 bulan</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-icon ms-3 mb-3">
+                                <i class="fa-brands fa-js me-2"></i>
+                                <i class="fa-brands fa-node-js me-2"></i>
+                                <i class="fa-brands fa-react me-2"></i>
+                                <i class="fa-brands fa-php"></i>
+                            </div>
+                            <div class="row justify-content-center mb-2">
+                                <div class="col-6">
+                                    <button class="btn-edit ms-2" type="button">Edit</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn-delete me-1" type="button">Delete</button>
+                                </div>
+                            </div>
+                            <!-- <div class="card-end">
+                                <div class="d-grid gap-2 d-md-block ms-2 mb-2">
+                                    <button class="btn btn-primary" type="button">Edit</button>
+                                    <button class="btn btn-primary" type="button">Delete</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3 mt-5">
+                        <div class="card-app h-100">
+                            <img src="assets/logo4.jpg" class="card-img-top" alt="logo-3">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a class="text-decoration-none text-dark" href="project-detail.html">DumbsApp Mobile</a>
+                                </h5>
+                                <p class="card-time fw-light">durasi : 3 bulan</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-icon ms-3 mb-3">
+                                <i class="fa-brands fa-js me-2"></i>
+                                <i class="fa-brands fa-node-js me-2"></i>
+                                <i class="fa-brands fa-react me-2"></i>
+                                <i class="fa-brands fa-php"></i>
+                            </div>
+                            <div class="row justify-content-center mb-2">
+                                <div class="col-6">
+                                    <button class="btn-edit ms-2" type="button">Edit</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn-delete me-1" type="button">Delete</button>
+                                </div>
+                            </div>
+                            <!-- <div class="card-end">
+                                <div class="d-grid gap-2 d-md-block ms-2 mb-2">
+                                    <button class="btn btn-primary" type="button">Edit</button>
+                                    <button class="btn btn-primary" type="button">Delete</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4 mt-2">
+                        <div class="card-app h-100">
+                            <img src="assets/logo3.jpg" class="card-img-top" alt="logo-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a class="text-decoration-none text-dark" href="project-detail.html">Covid Tracking Mobile App</a>
+                                </h5>
+                                <p class="card-time fw-light">durasi : 3 bulan</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-icon ms-3 mb-3">
+                                <i class="fa-brands fa-js me-2"></i>
+                                <i class="fa-brands fa-node-js me-2"></i>
+                                <i class="fa-brands fa-react me-2"></i>
+                                <i class="fa-brands fa-php"></i>
+                            </div>
+                            <div class="row justify-content-center mb-2">
+                                <div class="col-6">
+                                    <button class="btn-edit ms-2" type="button">Edit</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn-delete me-1" type="button">Delete</button>
+                                </div>
+                            </div>
+                            <!-- <div class="card-end">
+                                <div class="d-grid gap-2 d-md-block ms-2 mb-2">
+                                    <button class="btn btn-primary" type="button">Edit</button>
+                                    <button class="btn btn-primary" type="button">Delete</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4 mt-2">
+                        <div class="card-app h-100">
+                            <img src="assets/logo5.jpg" class="card-img-top" alt="logo-5">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a class="text-decoration-none text-dark" href="project-detail.html">DumbBook Mobile App</a>
+                                </h5>
+                                <p class="card-time fw-light">durasi : 3 bulan</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-icon ms-3 mb-3">
+                                <i class="fa-brands fa-js me-2"></i>
+                                <i class="fa-brands fa-node-js me-2"></i>
+                                <i class="fa-brands fa-react me-2"></i>
+                                <i class="fa-brands fa-php"></i>
+                            </div>
+                            <div class="row justify-content-center mb-2">
+                                <div class="col-6">
+                                    <button class="btn-edit ms-2" type="button">Edit</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn-delete me-1" type="button">Delete</button>
+                                </div>
+                            </div>
+                            <!-- <div class="card-end">
+                                <div class="d-grid gap-2 d-md-block ms-2 mb-2">
+                                    <button class="btn btn-primary" type="button">Edit</button>
+                                    <button class="btn btn-primary" type="button">Delete</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <article>
+            <div class="my-project">
+                <h1>My Project</h1>
+            </div>
+            <div id="article" class="article-project">
+                <div class="project-card">
+                    <div class="menu-project-card">
+                        <div class="image-card-project">
+                            <img src="assets/svg.png" alt="svg-image">
+                        </div>
+                        <div class="title-card-project">
+                            <h3>
+                                <a href="task-day6.html">SWK Mobile App</a>
+                            </h3>
+                            <p>durasi : 3 bulan</p>
+                        </div>
+                        <div class="content-card-project">
+                            <p>App that used for all people Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates fugit id debitis consequuntur accusantium.</p>
+                        </div>
+                        <div class="logo-card-project" id="tampil">
+                            <img src="assets/js.png" alt="Js-image">
+                            <img src="assets/git.png" alt="git-image">
+                            <img src="assets/deploy.png" alt="deploy-image">
+                        </div>
+                        <div class="btn-project">
+                            <div class="btn-edit-project">
+                                <button>Edit</button>
+                            </div>
+                            <div class="btn-delete-project">
+                                <button>Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="menu-project-card">
+                        <div class="image-card-project">
+                            <img src="assets/svg.png" alt="svg-image">
+                        </div>
+                        <div class="title-card-project">
+                            <h3>
+                                <a href="task-day6.html">SWK Mobile App</a>
+                            </h3>
+                            <p>durasi : 3 bulan</p>
+                        </div>
+                        <div class="content-card-project">
+                            <p>App that used for all people Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates fugit id debitis consequuntur accusantium.</p>
+                        </div>
+                        <div class="logo-card-project">
+                            <img src="assets/js.png" alt="Js-image">
+                            <img src="assets/git.png" alt="git-image">
+                            <img src="assets/deploy.png" alt="deploy-image">
+                        </div>
+                        <div class="btn-project">
+                            <div class="btn-edit-project">
+                                <button>Edit</button>
+                            </div>
+                            <div class="btn-delete-project">
+                                <button>Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="menu-project-card">
+                        <div class="image-card-project">
+                            <img src="assets/svg.png" alt="svg-image">
+                        </div>
+                        <div class="title-card-project">
+                            <h3>
+                                <a href="task-day6.html">SWK Mobile App</a>
+                            </h3>
+                            <p>durasi : 3 bulan</p>
+                        </div>
+                        <div class="content-card-project">
+                            <p>App that used for all people Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates fugit id debitis consequuntur accusantium.</p>
+                        </div>
+                        <div class="logo-card-project">
+                            <img src="assets/js.png" alt="Js-image">
+                            <img src="assets/git.png" alt="git-image">
+                            <img src="assets/deploy.png" alt="deploy-image">
+                        </div>
+                        <div class="btn-project">
+                            <div class="btn-edit-project">
+                                <button>Edit</button>
+                            </div>
+                            <div class="btn-delete-project">
+                                <button>Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="menu-project-card">
+                        <div class="image-card-project">
+                            <img src="assets/svg.png" alt="svg-image">
+                        </div>
+                        <div class="title-card-project">
+                            <h3>
+                                <a href="task-day6.html">SWK Mobile App</a>
+                            </h3>
+                            <p>durasi : 3 bulan</p>
+                        </div>
+                        <div class="content-card-project">
+                            <p>App that used for all people Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates fugit id debitis consequuntur accusantium.</p>
+                        </div>
+                        <div class="logo-card-project">
+                            <img src="assets/js.png" alt="Js-image">
+                            <img src="assets/git.png" alt="git-image">
+                            <img src="assets/deploy.png" alt="deploy-image">
+                        </div>
+                        <div class="btn-project">
+                            <div class="btn-edit-project">
+                                <button>Edit</button>
+                            </div>
+                            <div class="btn-delete-project">
+                                <button>Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article> -->
+
+        <!-- End My Project -->
+
+        <script src="project.js"></script>
+    </body>
+</html>

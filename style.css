@@ -1,0 +1,930 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray !important;
+}
+
+/* Styling Navbar */
+.navbar-brand {
+    margin-right: 50px !important;
+} .nav-item {
+    margin-right: 15px;
+} .nav-item a {
+    font-family: 'Poppins';
+    font-weight: 500 !important;
+    color: black !important;
+} .nav-item a:hover {
+    color: orangered !important;
+}
+
+button.btn {
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    color: black;
+} button.btn:hover {
+    background-color: blue;
+} button.btn a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: black;
+} button.btn a:hover {
+    color: white;
+}
+/* End Styling Navbar */
+
+/* Start styling Card */
+.card {
+    border: 1px solid grey;
+    border: none !important;
+    width: 350px;
+    text-align: justify;
+    font-family: 'Poppins';
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 10px;
+    border-radius: 10px !important;
+    box-shadow: 10px 10px 20px rgb(53, 52, 52);
+    background-color: rgb(231, 231, 231) !important;
+} 
+.card-image img {
+    width: 100%;
+    border-radius: 20px;
+    margin: auto;
+} 
+.card-title h1 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+} 
+.card-content p {
+    font-family: 'Poppins';
+    text-align: justify;
+    color: rgb(102, 101, 101);
+} 
+.card-table table {
+    border-collapse: collapse !important;
+    border-color: black;
+    width: 100%;
+    background-color: rgb(245, 245, 245) !important;
+    border-spacing: 0;
+} .card-table th {
+    font-family: 'Poppins';
+    text-align: center;
+    padding: 3px;
+    color: black;
+    border-width: 1px !important;    
+} .card-table td {
+    font-family: 'Poppins';
+    text-align: center;
+    padding: 5px;
+    color: black;
+    border-width: 1px !important;
+}
+/* End styling Card */
+
+/* Start Styling Profile Day 1 */
+.profile {
+    border: 1px solid rgb(217, 217, 221);
+    width: 85%;
+    font-family: 'Poppins';
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgb(53, 52, 52);
+    background-color: whitesmoke;
+}
+
+.profile-title h1 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    width: 60%;
+    margin-top: 50px;
+}
+
+.profile-content p {
+    font-family: 'Poppins';
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 60%;
+}
+
+.profile-call {
+    text-align: left;
+    width: 60%;
+} .profile-call button {
+    background-color: orange;
+    border-radius: 10px !important;
+    border: none;
+    padding: 8px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: "Montserrat";
+} .profile-call button a {
+    text-decoration: none;
+    color: whitesmoke;
+} .profile-call button:hover {
+    background-color: orangered;
+}
+
+.profile-download {
+    width: 60%;
+    text-align: left;
+} .profile-download a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 3px;
+}
+
+.profile-contact a {
+    text-decoration: none;
+} .profile-contact img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 8px 20px 0px;
+}
+
+.profile-image {
+    width: 30%;
+    border: 1px solid grey;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 20px rgb(53, 52, 52);
+} .profile-image img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+} .profile-image h4 {
+    font-family: 'Pacifico';
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+} .profile-image h6 {
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+/* End Styling Profile Day 1 */
+
+/* Start Styling Form Contact/Day 2 */
+.contact-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+} .contact-title h1 {
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.contact-menu {
+    border: 1px solid black;
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.contact-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+} .contact-name label {
+    font-size: 17px; 
+    font-weight: bold;
+    font-family: 'Poppins';
+    padding: 5px 5px 0px 3px;
+    margin-bottom: 3px;
+} .contact-name input {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 5px;
+}
+
+.contact-email {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+} .contact-email label {
+    font-size: 17px; 
+    font-weight: bold;
+    font-family: 'Poppins';
+    padding: 5px 5px 0px 3px;
+    margin-bottom: 3px;
+} .contact-email input {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 5px;
+}
+
+.contact-phone {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+} .contact-phone label {
+    font-size: 17px; 
+    font-weight: bold;
+    font-family: 'Poppins';
+    padding: 5px 5px 0px 3px;
+    margin-bottom: 3px;
+} .contact-phone input {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 5px;
+}
+
+.contact-subject {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+} .contact-subject label {
+    font-size: 17px; 
+    font-weight: bold;
+    font-family: 'Poppins';
+    padding: 5px 5px 0px 3px;
+    margin-bottom: 3px;
+} .contact-subject select {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 5px;
+}
+
+.contact-message {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+} .contact-message label {
+    font-size: 17px; 
+    font-weight: bold;
+    font-family: 'Poppins';
+    padding: 5px 5px 0px 3px;
+    margin-bottom: 3px;
+} .contact-message textarea {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.contact-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+} .contact-btn button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 53);
+    color: whitesmoke;
+    font-family: "Montserrat";
+    font-size: 15px;
+    padding-top: 8px;
+    padding-right: 25px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+} .contact-btn button:hover {
+    background-color: orangered;
+    color: black;
+}
+/* End Styling Form Contact/Day 2 */
+
+/* Start Styling task Day 3 */
+.project {
+    display: flex;
+    border: 1px solid black;
+    border: none;
+    border-radius: 10px;
+    width: 85%;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    box-shadow: 10px 10px 20px rgb(53, 52, 52);
+    background-color: whitesmoke;
+}
+.left-project {
+    flex: 60%;
+}
+
+.project-title {
+    margin-top: 80px;
+    margin-bottom: 20px;
+} .project-title h1 {
+    text-align: left;
+    margin-left: 70px;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.project-content p {
+    text-align: justify;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    font-family: 'Poppins';
+}
+
+.project-call {
+    text-align: left;
+    margin-left: 70px;
+} .project-call button {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 53);
+    font-family: "Montserrat";
+    font-size: 15px;
+    padding-top: 8px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+} .project-call button a {
+    text-decoration: none;
+    color: white;
+} .project-call button:hover {
+    background-color: orangered;
+    color: black;
+    font-weight: bold;
+} .project-call a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.project-contact {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 70px;
+} .project-contact a {
+    text-decoration: none;
+} .project-contact img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.right-project {
+    flex: 40%;
+}
+
+.project-image {
+    width: 70%;
+    border: 1px solid grey;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 20px rgb(53, 52, 52);
+    margin-top: 50px;
+    margin-bottom: 50px;
+} .project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+} .project-image h4 {
+    font-family: 'Pacifico';
+    font-weight: 500;
+    margin-top: 10px;
+} .project-image h6 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-top: 5px;
+}
+/* End Styling task Day 3  */
+
+/* Start Styling Personal/page home*/
+.personal {
+    display: flex;
+    border: 1px solid black;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    /* box-shadow: 10px 10px 20px rgb(53, 52, 52);
+    background-color: whitesmoke; */
+}
+
+.left-personal {
+    flex: 40%;
+}
+
+.right-personal {
+    flex: 60%;
+    margin-right: 50px;
+}
+
+.personal-content {
+    margin-top: 50px;
+} .personal-content h1 {
+    text-align: left;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+} .personal-content p {
+    text-align: justify;
+    margin-bottom: 30px;
+    font-family: 'Poppins';
+}
+
+.personal-skill {
+    display: flex;
+    text-align: left;
+    margin-top: 50px;
+} .sub-skill {
+    margin-right: 20px;
+} .sub-skill h2 {
+    text-align: left;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+} .sub-skill p {
+    text-align: justify;
+    margin-bottom: 30px;
+} .sub-skill img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.personal-contact {
+    text-align: left;
+    margin-top: 30px;
+} .personal-contact h1 {
+    text-align: left;
+    font-family: 'Pacifico';
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+} .personal-contact a {
+    text-decoration: none;
+} .personal-contact img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+/* End Styling Personal/Page Home */
+
+/* Start Blog Form*/
+.blog-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-form .form-container {
+    width: 500px;
+} .blog-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+.blog-form form label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog-form form input,
+textarea,
+select {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+.blog-form form textarea {
+  height: 250px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.blog-form form .input-blog-image-group {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .blog-form form .input-blog-image-group label p {
+    font-size: 15px;
+  }
+  
+  .blog-form form .input-blog-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .blog-form form .button-group {
+    text-align: right;
+  }
+  
+  .blog-form form button {
+    margin-top: 50px;
+    padding: 8px 20px;
+    font-size: 17px;
+    background: #ec4d37;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .blog hr {
+    border: 1px solid #ffff !important;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+/* End Blog Form*/
+
+/* Start Blog List */
+.blog .blog-list {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .blog .blog-list .blog-list-item {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #dbdbdb;
+    border-radius: 8px;
+    display: flex;
+  }
+  
+  .blog .blog-list .blog-list-item .blog-image {
+    flex: 1;
+  }
+  
+  .blog .blog-list .blog-list-item .blog-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .blog .blog-list .blog-list-item .blog-content {
+    padding-left: 20px;
+    flex: 2;
+  }
+  
+  .blog .blog-list .btn-group {
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+  }
+  
+  .blog .blog-list .btn-group .btn-edit {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #dbdbdb;
+  }
+  
+  .blog .blog-list .btn-group .btn-post {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #ec4d37;
+    color: #fff;
+  }
+  
+  .blog .blog-list h1 a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .blog .blog-list .detail-blog-content {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .blog .blog-list .blog-list-item p {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+  }
+/* End Blog List */
+
+/* Start Blog Detail */
+.blog-detail {
+    display: flex;
+    justify-content: center;
+}
+  
+.blog-detail-container {
+    width: 80%;
+    margin: 40px 0;
+} .blog-detail-container img {
+    width: 100%;
+} .blog-detail-container h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 120%;
+    margin-bottom: 15px;
+} .blog-detail-container .author {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 20px;
+} .blog-detail-container p {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: justify;
+  }
+/* End Blog Detail */
+
+/* Start Project */
+.form-blog-project {
+    display: flex;
+    justify-content: center;
+} .form-blog-project label {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-blog-project .container-blog-project {
+    width: 500px;
+} .form-blog-project .container-blog-project h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-family: 'Poppins';
+} .form-blog-project .container-blog-project label {
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+#input-project-name, #input-start-time, #input-end-time, #input-description {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.form-blog-project .time-project {
+    display: flex;
+} .form-blog-project .time-project .time-project-left {
+    flex: 50%;
+    margin-right: 5px;
+} .form-blog-project .time-project .time-project-right {
+    flex: 50%;
+    margin-left: 5px;
+}
+
+.form-blog-project .description-project textarea {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.form-blog-project .list-project {
+    display: flex;
+} .form-blog-project .list-project .list-left-project {
+    display: inline;
+    flex: 50%;
+} .form-blog-project .list-project .list-left-project div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form-blog-project .list-project #input-list-checkbox {
+    margin-right: 10px;
+}
+
+.form-blog-project .list-project .list-right-project {
+    display: inline;
+    flex: 50%;
+} .form-blog-project .list-project .list-right-project div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container-blog-project .image-project {
+    margin-top: 10px; 
+    margin-bottom: 20px;
+} .container-blog-project .image-project label {
+    margin-bottom: 10px;
+} .container-blog-project .image-project input {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.container-blog-project .button-project {
+    text-align: right;
+} .container-blog-project .button-project button {
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    background-color: orangered;
+    color: black;
+    padding: 5px 20px;
+    margin-bottom: 100px;
+} .button-project button:hover {
+    background-color: blue;
+    color: white;
+}
+/* End Styling Form Blog Project Task Day 5 */
+
+/* Start My Project */
+.my-project {
+    background-color: #fff;
+}
+.card-app {
+    background-color: #dbdbdb;
+} .card-text {
+    text-align: justify !important;
+}
+.btn-edit, .btn-delete {
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 8px !important;
+} .btn-edit {
+    margin-right: 0 !important;
+    width: 95%;
+} .btn-delete {
+    width: 95%;
+} button:hover {
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+}
+/* End My Project */
+
+/* Start Project Detail */
+.detail-project {
+    display: flex;
+    justify-content: center;
+}
+
+.container-detail-project {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    /* background-color: brown; */
+}
+
+.container-detail-project .title-detail-project h1 {
+    text-align: center;
+}
+
+.container-detail-project .header-detail-project {
+    display: flex;
+    margin-top: 30px;
+}
+
+.header-detail-project .header-left-project {
+    flex: 60%;
+    /* background-color: aqua; */
+} .header-detail-project .header-left-project img {
+    width: 100%;
+}
+
+.header-detail-project .header-right-project {
+    flex: 40%;
+    /* background-color: beige; */
+}
+
+.header-right-project .top-right-project {
+    /* display: inline; */
+    /* background-color: rgb(164, 162, 177); */
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+} .header-right-project .top-right-project div {
+    display: flex;
+} .header-right-project .top-right-project h3 {
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+} .header-right-project .top-right-project i {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+} .header-right-project .top-right-project p {
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.header-right-project .bottom-right-project {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* background-color: blanchedalmond; */
+}
+
+.header-right-project .bottom-project {
+    /* background-color: brown; */
+    margin-left: 20px;
+    margin-right: 10px;
+} .header-right-project .bottom-project h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    /* background-color: aqua; */
+}
+
+.header-right-project .bottom-right-project .icon-left-project {
+    display: flex;
+    flex: 40%;
+}
+.header-right-project .bottom-right-project .icon-right-project {
+    display: flex;
+    flex: 60%;
+}
+
+.sub-icon-left div {
+    margin-bottom: 20px;
+} .sub-icon-right div {
+    margin-bottom: 20px;
+}
+
+.header-right-project .bottom-right-project i {
+    display: inline;
+    margin-right: 10px;
+} .header-right-project .bottom-right-project p {
+    display: inline;
+    font-family: 'Montserrat';
+}
+
+.content-blog-detail {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    /* background-color: rgb(255, 254, 254); */
+} .content-blog-detail p {
+    text-align: justify;
+}
+/* End Project Detail */
